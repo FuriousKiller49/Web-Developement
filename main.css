@@ -1,0 +1,193 @@
+:root{
+    --main_color: red;
+}
+
+
+
+.image img{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+
+.main_pic{
+    display: flex;
+    position: relative;
+}
+
+.main_pic .quote{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    overflow: visible;
+    color: white;
+}
+
+
+.main_pic .quote h1{
+    font-size: 4rem;
+
+}
+
+.main_pic .quote p{
+    font-size: 2rem;
+    padding: 0px 100px;
+    line-height: 50px;
+}
+
+.main_pic .button {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+}
+
+.main_pic .button button{
+    background-color: yellow;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+.about{
+    height: 90vh;
+    display: flex;
+    position: relative;
+    margin: 100px 0 0 0;
+}
+
+.about .text{
+    padding: 100px 150px 100px 110px;
+    width: 50vw;
+    background-color: aqua;
+    margin: 20px 150px;
+    height: 70vh;
+    font-size: 1.2rem;
+}
+
+
+.about .about_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about .about_photo img{
+    width: 35vw;
+    height: 55vh;
+    position: absolute;
+    left: 52%;
+    top: 10%;
+    
+}
+
+
+.service_heading{
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+
+
+.services{
+    /* border: 10px solid black; */
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+    padding: 20px 40px ;
+}
+
+.services .service_items{
+    width: 25vw;
+    height: 50vh;
+    /* border: 2px solid hotpink; */
+}
+
+.services .service_items img{
+    height: 30vh;
+    width: 25vw;
+}
+
+.services .service_items h3{
+    line-height: 50px;
+}
+
+.services .service_items h4{
+    line-height: 50px;
+}
+
+.services .service_items button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--main_color);
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+
+footer .contact{
+    width: 20vw;
+    height: 50vh;    
+    padding: 50px 10px 50px 30px;
+    line-height: 30px;
+}
+
+footer .contact h1{
+    font-weight: 900;
+    line-height: 70px;
+}
+
+footer .contact_details{
+    width: 30vw;
+    height: 50vh;    
+    padding: 50px 10px 50px 30px;
+    line-height: 50px;
+}
+
+footer .contact_details span i{
+    padding: 5px;
+    width: 30px;
+    height: 40px;
+
+}
+
+
+
+footer .login_details{
+    border: 7px solid rgb(115, 38, 197);
+    width: 40vw;
+    height: 50vh;    
+    padding: 15vh 4vw;
+    line-height: 20px;
+}
+
+footer .login_details input{
+    height: 5vh;
+    width: 17vw;
+    background-color: var(--main_color);
+    font-weight: 900;
+    border-color: black;
+    padding: 0px 5px;
+}
+
+footer .login_details button{
+    background-color: black;
+    height: 5vh;
+    width: 7vw;
+    color: white;
+    border: black;
+}
+
+
+
+

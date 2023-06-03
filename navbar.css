@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+:root{
+    --main_color: red;
+}
+
+
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 100px;
+    height: 50px;
+}
+
+nav .logo{
+    margin: 6px;
+    cursor: pointer;
+}
+
+
+nav .mainmenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainmenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav .mainmenu li a:hover{
+    background-color: var(--main_color);
+}
+
+nav .openmenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+
+}
+
+nav .mainmenu .closemenu , .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover{
+    color: blue;
+}
+
+.fa-twitter:hover{
+    color: seagreen;
+}
+
+.fa-github:hover{
+    color: tomato;
+}
+
+.fa-whatsapp:hover{
+    color: hotpink;
+}
+
+.fa-instagram:hover{
+    color: yellow;
+}
+
+.fa-snapchat:hover{
+    color: red;
+}
+
+@media  (max-width: 800px){
+
+    nav .mainmenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--main_color);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openmenu{
+        display: block;
+
+    }
+
+    nav .mainmenu li a:hover{
+        background: none;
+        color: orange;
+        font-size: 1.6rem;
+    }
+    
+    .icons i{
+        display: inline-block;
+        padding: 10px;
+    }
+
+}
